@@ -1,8 +1,12 @@
 <template name="city">
+    
     <div id="banner" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
         <h1>Take a break.</h1>
         <p>in {{name}}.</p>
     </div>
+    
+    
+    
     <div id="double-choice">
         <div id="random-choice">
             <h2>Wanna go to a random place ?</h2>
@@ -13,11 +17,34 @@
             <button>Find together !</button>
         </div>
     </div>
-    <div id="search-choice">
+    
+    
+    
+    <div id="search-choice" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
         <h1>Looking for something in particular ?</h1>
         <p>Some details will be asked</p>
-        <input type="search" placeholder="Restaurant, place, food, price...and more" /><input type="submit" value="Search">
+        <input id="search-bar" type="search" placeholder="Restaurant, place, food, price...and more" /><input id="submit-search" type="submit" value="Search" />
     </div>
+    
+    
+    
+    
+    <div id="special-category">
+        <h1 id="title-special">Maybe with a <span class="special-category">special</span> category ?</h1>
+        <p id="click-preference">Click on your preference</p>
+        <div class="left-category">
+            <div class="left-image-category" style="background: url('/dublin-restaurant.jpg') no-repeat center; background-size: cover;">
+                <p>Restaurant</p>
+            </div>
+        </div>
+        <div class="right-category">
+            <div class="right-image-category" style="background: url('/fast-food.jpg') no-repeat center; background-size: cover;">
+                <p>Fast-Food</p>
+            </div>
+        </div>
+    </div>
+    
+    
     
     <!-- {{>choice}} -->
     {{>insertActivity}}

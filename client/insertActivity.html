@@ -1,16 +1,6 @@
 <template name="insertActivity">
 
-{{#each a in activities}}
-<p> {{a.name}} </p>
-<p> {{a.nature}} </p>
-<p> {{a.editor}} </p>
-<p> {{a.pictures}} </p>
-<p> {{a.description}} </p>
-<p> {{a.url}} </p>
-<hr>
-{{/each}}
-
-<form>
+<form style="clear:both;">
 <input id="id" type="hidden" value="c0">
 <input id="name2" type="text" placeholder="activity name"><br>
 <input id="nature" type="text" placeholder="nature"><br>

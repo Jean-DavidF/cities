@@ -24,7 +24,7 @@
 
 #double-choice {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 75px;
 }
 
 #random-choice {
@@ -40,8 +40,10 @@
 
 #random-choice button {
     margin-top: 40px;
-    padding: 10px 40px;
+    padding: 13px 50px;
     color: #444444;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
 }
 
 #choose-together {
@@ -57,6 +59,118 @@
 
 #choose-together button {
     margin-top: 40px;
-    padding: 10px 40px;
+    padding: 13px 50px;
+    font-size: 1.2rem;
     color: #444444;
+}
+
+#search-choice {
+    clear: left;
+    width: 100%;
+    text-align: center;
+}
+
+#search-choice h1 {
+    padding-top: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+#search-choice p {
+    margin-top: -10px;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+#search-choice input {
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+#search-bar{
+    display: inline-block;
+    border: none;
+    background-color: rgba(0,0,0,0.55);
+    width: 700px;
+    padding: 15px 25px;
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#submit-search {
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom, #fe8f2f, #e17416);
+    text-shadow: 0px 0.5px 0.5px black;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.special-category {
+    color: #ff9030;
+}
+
+#title-special {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #444444;
+}
+
+#click-preference {
+    color: #444444;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.left-category {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+}
+
+.right-category {
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+.left-image-category {
+    width: 55%;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.left-image-category p {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 15px white;
+}
+
+.right-image-category {
+    width: 55%;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.right-image-category p {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 15px white;
 }
