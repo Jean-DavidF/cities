@@ -7,14 +7,40 @@ Template.choice.helpers({
     }
 });
 
-$("#city-left").mouseover(function(){
+/*
+$(document).ready(function(){
+$("#description-city2").mouseenter(function(){
     $("#description-city1").css({
         opacity: 1,
     });
 });
 
-$("#city-right").mouseover(function(){
+$("#description-city1").mouseenter(function(){
     $("#description-city2").css({
         opacity: 1,
-    });
+    }););
+});
+}); */
+
+Template.choice.events({
+    'mouseenter #description-city1': function (e) {
+        $("#description-city2").animate({
+            opacity: 1,
+        }),75;
+    },
+    'mouseenter #description-city2': function (e) {
+        $("#description-city1").animate({
+            opacity: 1,
+        }),75;
+    },
+    'mouseleave #description-city1': function (e) {
+        $("#description-city2").css({
+            opacity: 0.01,
+        });
+    },
+    'mouseleave #description-city2': function (e) {
+        $("#description-city1").css({
+            opacity: 0.01,
+        });
+    }
 });
