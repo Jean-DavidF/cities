@@ -1,12 +1,13 @@
-<head>
-    <title>Visiting Cities !</title>
-</head>
-<body>
-    <header>
-        {{>navbar}}
-    </header>
-    <main>
-        {{>home}}
-    </main>
-</body>
-
+<template name="main">
+    <head>
+        <title>Visiting Cities !</title>
+    </head>
+    <body>
+        <header>
+            {{>navbar}}
+        </header>
+        <main>
+            {{>yield}}
+        </main>
+    </body>
+</template>
