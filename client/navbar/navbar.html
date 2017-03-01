@@ -1,5 +1,21 @@
 <template name="navbar">
-    <p style="float:left; margin-left: 350px;">Dublin &amp; Nantes</p>
-    <p style="float:right; margin-right: 350px;">{{>loginButtons}}</p>
-    <a href='#' id='reset'>reset db</a>
+    <nav>
+        <a><img id="hambur" src="/menu-options.png" /></a>
+        <a><img id="lelogo" src="/Findeat.png" /></a>
+        {{>loginButtons}}
+        <a href='#' id='reset'>reset db</a>
+    </nav>
+
+
+
+    <style>
+        #hambur {
+            width: 2%;
+        }
+
+        #lelogo {
+            width: 10%;
+        }
+    </style>
+
 </template>
