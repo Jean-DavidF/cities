@@ -25,3 +25,4 @@ autopublish
 insecure
 twbs:bootstrap@=3.3.5
 random
+iron:router@=1.0.12
