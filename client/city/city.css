@@ -105,6 +105,7 @@ a:hover {
     font-size: 1.2rem;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    box-shadow: 0px 0px 500px #e5e5e5;
 }
 
 #submit-search {
@@ -118,6 +119,7 @@ a:hover {
     font-size: 1.2rem;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 500px #e5e5e5;
 }
 
 .special-category {
