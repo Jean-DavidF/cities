@@ -20,6 +20,19 @@ Meteor.methods({
       "comments":comments,
       "description":description,
       "url":url
+    },function(err, objectId) {
+      return objectId;
+      console.log(tmp);
     });
   }
 });
+
+// Meteor.methods({
+//   insertActivity:function(activity) {
+//     return Activities.insert(activity);
+//   },
+//   updateCity:function(idCity, idActivity) {
+//     var activity=Activities //find the id _id:idActivity
+//   },
+//   Cities.update({_id:idCity}, {$push:{activities:activity}})
+// })

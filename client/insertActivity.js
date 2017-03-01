@@ -11,7 +11,7 @@ Template.insertActivity.events({
         var city = Cities.findOne({
             _id: myid
         });
-        Meteor.call("insertCity",
+       var activityId = Meteor.call("insertActivity",
             $("#name2").val(),
             $('#nature').val(),
             $('#editor').val(),
@@ -21,21 +21,16 @@ Template.insertActivity.events({
             function() {
                 alert("Added");
             });
-
-        activities.update("insertCity",{
-            _id: "#id"
-        }, {
-            $push: {
-                activities: [{
-                    name: $("#name2").val(),
-                    nature: $('#nature').val(),
-                    editor: $('#editor').val(),
-                    pictures: $('#pictures').val(),
-                    description: $('#description').val(),
-                    url: $('#url').val()
-                }]
-            }
-        })
-
     }
+})
+
+Template.insertActivity.events({
+  "click button": function() {
+    var idCity //=  find id
+    var idActivity //=  find id of current activity _id
+    Meteor.call("insertActivity", activity,
+  function(err, idActivity) {
+    Meteor.call("updateCity", idCity, idActivity, function(){});
+  })
+  }
 })
