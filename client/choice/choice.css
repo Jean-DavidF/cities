@@ -1,0 +1,59 @@
+#city-left {
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+
+#city-right {
+    float: right;
+    width: 50%;
+    height: 100vh;
+}
+
+#description-city1 {
+    float: right;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,144,48,0.86);
+    color: black;
+    text-align: center;
+    position:relative;
+    opacity: 0.01;
+}
+
+#description-city2 {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background: rgba(6,8,13,0.86);
+    color: #ff9030;
+    position:relative;
+    opacity: 0.01;
+}
+
+.description-content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    transform: translateY(-80%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description-content p:first-child {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.description-content p:last-child {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
