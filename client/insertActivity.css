@@ -1,0 +1,50 @@
+#insert-activity {
+    width:100%;
+    clear: both;
+    padding-top: 1px;
+}
+
+#insert-activity h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #444444;
+    font-size: 2rem;
+    font-weight:bold;
+}
+
+.new-place {
+    color: #ff9030;
+}
+
+#insert-activity p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+
+.name2-activity {
+    float: left;
+    width: 50%;
+    text-align: right;
+    margin-right: 35px;
+    border: 1px solid red;
+}
+
+.name2-activity input {
+    width: 35%;
+}
+
+.nature-activity {
+    float: right;
+    width: 50%;
+    margin-left: 35px;
+    border: 1px solid red;
+}
+
+.nature-activity input {
+    width: 35%;
+}
+
+.editor-activity {
+    clear:both;
+}

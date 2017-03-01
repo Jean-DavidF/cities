@@ -1,29 +1,46 @@
 <template name="navbar">
-    <nav>
-        <a><img id="hambur" src="/menu-options.png" /></a>
-        <div id="centrage">
-            <a><img id="lelogo" src="/Findeat.png" /></a>
-        </div>
-        {{>loginButtons}}
-        <a href='#' id='reset'>reset db</a>
+    <nav id="nav">
+        <a href=""><img id="burger" src="/menu-options.png" /></a>
+        <a href="/"><img id="logo2" src="/Findeat.png" /></a>
+        <div id="signIn">{{>loginButtons}}</div>
     </nav>
 
-
-
     <style>
-        #centrage {
+        #nav {
+            width: 100%;
+            position: relative;
+            height: 80px;
+            margin-bottom: 0px;
+        }
+
+        #burger {
+            width: 30px;
+            height: auto;
+            float: left;
+            margin-left: 45px;
+            margin-top: 25px;
+        }
+
+        #logo2 {
+            width: 120px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-top: 18px;
+            transform: translateX(-20%);
+        }
+
+        #signIn {
+            color: #ff9130;
+            position: absolute;
+            width: 70px;
             text-align: center;
+            right: 45px;
+            top: 30px;
         }
 
-        #hambur {
-            width: 2%;
-            margin-left: 2.5%;
-            margin: auto;
-            padding: auto;
-        }
-
-        #lelogo {
-            width: 7.5%;
+        #login-sign-in-link {
+            color: #ff9130;
         }
     </style>
 
