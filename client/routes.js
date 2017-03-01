@@ -19,6 +19,7 @@ Router.route("/city/:id", {
         return Cities.findOne({_id : this.params.id});
     }
 });
+<<<<<<< HEAD
 /*
 Router.route('/city/:id', {
     template: "city",
@@ -28,3 +29,5 @@ Router.route('/city/:id', {
     }
 });
 */
+=======
+>>>>>>> 6c66b0a344f5c3944d5fbf418980684d6fb142b2

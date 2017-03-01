@@ -1,5 +1,16 @@
 <template name="city">
-    <p style="clear:left;">Home {{name}}</p>
-    
-    <img src='{{picture}}' />
+    <div id="banner" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
+        <h1>Take a break.</h1>
+        <p>in {{name}}.</p>
+    </div>
+    <div id="double-choice">
+        <div id="random-choice">
+            <h2>Wanna go to a random place ?</h2>
+            <button>Find a random place !</button>
+        </div>
+        <div id="choose-together">
+            <h2>Or try to choose together</h2>
+            <button>Find a random place !</button>
+        </div>
+    </div>
 </template>
