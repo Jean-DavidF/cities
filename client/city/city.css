@@ -21,3 +21,42 @@
 #banner h1, #banner p {
     text-shadow: 2px 2px 7px black;
 }
+
+#double-choice {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#random-choice {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#random-choice h2 {
+    color: #ff9030;
+    font-weight: bold;
+}
+
+#random-choice button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    color: #444444;
+}
+
+#choose-together {
+    float: right;
+    width:50%;
+    text-align: center;
+}
+
+#choose-together h2 {
+    color: #ff9030;
+    font-weight: bold;
+}
+
+#choose-together button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    color: #444444;
+}
