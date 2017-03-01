@@ -1,7 +1,9 @@
 <template name="navbar">
     <nav>
         <a><img id="hambur" src="/menu-options.png" /></a>
-        <a><img id="lelogo" src="/Findeat.png" /></a>
+        <div id="centrage">
+            <a><img id="lelogo" src="/Findeat.png" /></a>
+        </div>
         {{>loginButtons}}
         <a href='#' id='reset'>reset db</a>
     </nav>
@@ -9,9 +11,15 @@
 
 
     <style>
+        #centrage {
+            text-align: center;
+        }
+
         #hambur {
             width: 2%;
             margin-left: 2.5%;
+            margin: auto;
+            padding: auto;
         }
 
         #lelogo {
