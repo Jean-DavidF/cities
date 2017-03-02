@@ -11,15 +11,14 @@ Meteor.methods({
 });
 
 Meteor.methods({
-  insertActivity:function(name, nature, editor, pictures, comments, description, url) {
+  insertActivities:function(category, name, price, address, pictures, rating) {
     Activities.insert({
+      "category":category,
       "name":name,
-      "nature":nature,
-      "editor":editor,
+      "price":price,
+      "address":address,
       "pictures":pictures,
-      "comments":comments,
-      "description":description,
-      "url":url
+      "rating":rating
     },function(err, objectId) {
       return objectId;
       console.log(tmp);

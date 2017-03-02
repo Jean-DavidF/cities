@@ -214,7 +214,7 @@ if (Meteor.isServer) {
       //      ----- CREATING ACTIVITIES -----
             var activity0 = {
                 _id: 'a0',
-                category: 'ca0',
+                category: 'ca4',
                 name: 'De Grasso',
                 price: '23.00',
                 address: 'Main Street, Lens, France',
@@ -232,7 +232,7 @@ if (Meteor.isServer) {
                 }
             var activity1 = {
                 _id: 'a1',
-                category: 'ca0',
+                category: 'ca4',
                 name: 'Pizzeria',
                 price: '20.00',
                 address: 'Somewhere, here, France',
@@ -250,7 +250,7 @@ if (Meteor.isServer) {
                 }
             var activity2 = {
                 _id: 'a2',
-                category: 'ca0',
+                category: 'ca4',
                 name: 'Local Bakery',
                 price: '4.00',
                 address: 'Side Street, main road, France',
