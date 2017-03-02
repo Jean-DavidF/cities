@@ -12,3 +12,12 @@ Template.navbar.events({
         $("#menu-open").addClass('displaynone');
     }
 });
+
+Template.navbar.helpers({
+    "city1":function(){
+        return Cities.findOne({_id : "c0"});
+    },
+    "city2": function(){
+        return Cities.findOne({_id : "c1"});
+    }
+});

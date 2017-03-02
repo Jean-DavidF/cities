@@ -1,21 +1,25 @@
 <template name="navbar">
     <nav id="nav">
         <a href="" id="burger-btn"><img id="burger" src="/menu-options.png" /></a>
-        <a href="/"><img id="logo2" src="/Findeat.png" /></a>
+        <a href="/" id="a-logo2"><img id="logo2" src="/Findeat.png" /></a>
         <div id="signIn">{{>loginButtons}}</div>
     </nav>
     <div id="menu-open" class="displaynone">
         <img id="cross-icon" src="/cross-icon.png" />
         <div id="menu-open-content">
-            <a href="">HOME</a>
-            <a href="">CITY ONE</a>
-            <a href="">CITY TWO</a>
+            <a href="/">HOME</a>
+            <a href="/city/{{city1._id}}" style="text-transform:uppercase;">{{city1.name}}</a>
+            <a href="/city/{{city2._id}}" style="text-transform:uppercase;">{{city2.name}}</a>
             <a href="">CONTACT</a>
             <a href="" id="reset">RESET DATA</a>
         </div>
     </div>
 
     <style>
+        #a-logo2 {
+            width: 120px;
+        }
+        
         #menu-open {
             margin-top: -80px;
             z-index: 5000;
