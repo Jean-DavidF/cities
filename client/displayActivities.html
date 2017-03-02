@@ -1,0 +1,15 @@
+<template name="displayActivities">
+  {{#each a in Activities}}
+              <a href="">
+                  <div class="activity-object">
+                       <div class="activity-image" style="background: url('{{picture a}}') no-repeat center; background-size: cover;"></div>
+                      <div class="activity-title-description">
+                          <h2 class="activity-title">{{a.name}}</h2>
+                          <p class="activity-description">{{a.address}}</p>
+                      </div>
+                  </div>
+              </a>
+  {{/each}}
+
+</template>
+<!-- //template.currentData -->
