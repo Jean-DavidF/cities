@@ -41,113 +41,243 @@ if (Meteor.isServer) {
             Meteor.users.insert(gilles);
 
             // *** activities
-            var granet = {
-                _id: "c0a0",
-                name: "musée Granet",
-                nature: "place",
-                editor: {
-                    _id: gilles._id,
-                    email: gilles.emails[0].address
-                },
-                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
-                comments: [{
-                    user: {
-                        _id: derek._id,
-                        email: derek.emails[0].address
-                    },
-                    date: new Date(),
-                    text: "I love this place !!"
-  }],
-                description: "Le musée Granet présente près de 600 oeuvres de peinture, sculpture, pièces archéologiques. Peintures hollandaises, italiennes, françaises de diverses époques",
-                url: "http://museegranet-aixenprovence.fr"
-            };
-            var saintSauveur = {
-                _id: "c0a1",
-                name: "cathedral saint Sauveur",
-                nature: "place",
-                editor: {
-                    _id: gilles._id,
-                    email: gilles.emails[0].address
-                },
-                pictures: ["/images/Aix/sauveur1.jpg", "/images/Aix/sauveur2.jpg"],
-                comments: [{
-                    user: {
-                        _id: derek._id,
-                        email: derek.emails[0].address
-                    },
-                    date: new Date(),
-                    text: "great"
-  }],
-                description: "no description"
-            };
-            var festival = {
-                _id: "c0a2",
-                name: "festival de musique",
-                nature: "event",
-                editor: {
-                    _id: gilles._id,
-                    email: gilles.emails[0].address
-                },
-                pictures: ["/images/Aix/festival1.png", "/images/Aix/festival1.jpg", "/images/Aix/festival2.jpg"],
-                comments: [{
-                    user: {
-                        _id: derek._id,
-                        email: derek.emails[0].address
-                    },
-                    date: new Date(),
-                    text: "Awful music"
-  }],
-                description: "Fort de son succès, le Festival d’Aix accueille un public non seulement local, mais aussi national, et un grand nombre de spectateurs et de journalistes venus du monde entier.",
-                url: "http://festival-aix.com/en",
-                dateStart: new Date('2016-6-15'),
-                dateEnd: new Date('2016-7-10')
-            };
-            Activities.remove({})
-            Activities.insert(granet);
-            Activities.insert(saintSauveur);
-            Activities.insert(festival);
+  //           var granet = {
+  //               _id: "c0a0",
+  //               name: "musée Granet",
+  //               nature: "place",
+  //               editor: {
+  //                   _id: gilles._id,
+  //                   email: gilles.emails[0].address
+  //               },
+  //               pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+  //               comments: [{
+  //                   user: {
+  //                       _id: derek._id,
+  //                       email: derek.emails[0].address
+  //                   },
+  //                   date: new Date(),
+  //                   text: "I love this place !!"
+  // }],
+  //               description: "Le musée Granet présente près de 600 oeuvres de peinture, sculpture, pièces archéologiques. Peintures hollandaises, italiennes, françaises de diverses époques",
+  //               url: "http://museegranet-aixenprovence.fr"
+  //           };
+  //           var saintSauveur = {
+  //               _id: "c0a1",
+  //               name: "cathedral saint Sauveur",
+  //               nature: "place",
+  //               editor: {
+  //                   _id: gilles._id,
+  //                   email: gilles.emails[0].address
+  //               },
+  //               pictures: ["/images/Aix/sauveur1.jpg", "/images/Aix/sauveur2.jpg"],
+  //               comments: [{
+  //                   user: {
+  //                       _id: derek._id,
+  //                       email: derek.emails[0].address
+  //                   },
+  //                   date: new Date(),
+  //                   text: "great"
+  // }],
+  //               description: "no description"
+  //           };
+  //           var festival = {
+  //               _id: "c0a2",
+  //               name: "festival de musique",
+  //               nature: "event",
+  //               editor: {
+  //                   _id: gilles._id,
+  //                   email: gilles.emails[0].address
+  //               },
+  //               pictures: ["/images/Aix/festival1.png", "/images/Aix/festival1.jpg", "/images/Aix/festival2.jpg"],
+  //               comments: [{
+  //                   user: {
+  //                       _id: derek._id,
+  //                       email: derek.emails[0].address
+  //                   },
+  //                   date: new Date(),
+  //                   text: "Awful music"
+  // }],
+  //               description: "Fort de son succès, le Festival d’Aix accueille un public non seulement local, mais aussi national, et un grand nombre de spectateurs et de journalistes venus du monde entier.",
+  //               url: "http://festival-aix.com/en",
+  //               dateStart: new Date('2016-6-15'),
+  //               dateEnd: new Date('2016-7-10')
+  //           };
+  //           Activities.remove({})
+  //           Activities.insert(granet);
+  //           Activities.insert(saintSauveur);
+  //           Activities.insert(festival);
 
             // **** cities
-            var aix = {
+            // var Dublin = {
+            //     _id: "c0",
+            //     name: 'Dublin',
+            //     description: 'dublin city description HERE',
+            //     picture: '/images/Aix/aix.jpg',
+            //     categories: [{
+            //         _id: '',
+            //         name: '',
+            //         category: '',
+            //         picture: '',
+            //             activity: [{
+            //                 _id: '',
+            //                 name: '',
+            //                 price: '',
+            //                 address: '',
+            //                 pictures: [],
+            //                 rating: '',
+            //                 comments: [],
+            //                 tags: []
+            //             }]
+            //   }]
+            // };
+            //
+            // var Nantes = {
+            //     _id: "c1",
+            //     name: 'Nantes',
+            //     description: 'nantes city description HERE',
+            //     picture: '/images/Aix/aix.jpg',
+            //     categories: [{
+            //         _id: '',
+            //         name: '',
+            //         category: '',
+            //         picture: '',
+            //             activity: [{
+            //                 _id: '',
+            //                 name: '',
+            //                 price: '',
+            //                 address: '',
+            //                 pictures: [],
+            //                 rating: '',
+            //                 comments: [],
+            //                 tags: []
+            //             }]
+            //   }]
+            //   }
+            // db.cities.remove({});
+            // db.cities.insert(Dublin);
+            // db.cities.insert(Nantes);
+
+    //        ----- CREATING CITIES -----
+            var Dublin = {
                 _id: "c0",
-                name: 'Aix en Provence',
-                coordinates: {
-                    long: "43.5263",
-                    lat: "5.4454"
-                },
-                description: "Protégée par la Montagne Sainte Victoire qui culmine à 1.011 m, Aix est entourée d'une campagne richementpréservée avec d'authentiques bastides provençales entourées de jardins à la française. Son nom vient des sources thermales découvertes à la fondation de la ville en 123 avant JC par les romains. <br />Aix en Provence était la capitale de la Provence au XVème siècle : marchands prospères et notables firent de la ville la Florence provençale que l'on connaît aujourd'hui. Demeures bourgeoises, placettes fleuries, hôtels particuliers, fontaines anciennes, ruelles ombragées... toutes les images de la Provence noble des XVII° et XVIII° sont rassemblées à Aix. <br />",
+                name: 'Dublin',
+                description: 'dublin city description HERE',
                 picture: '/images/Aix/aix.jpg',
-                activities: [{
-                    _id: granet._id,
-                    name: granet.name,
-                    nature: granet.nature,
-                    picture: granet.pictures[0]
-  }, {
-                    _id: saintSauveur._id,
-                    name: saintSauveur.name,
-                    nature: saintSauveur.nature,
-                    picture: saintSauveur.pictures[0]
-  }, {
-                    _id: festival._id,
-                    name: festival.name,
-                    nature: festival.nature,
-                    picture: festival.pictures[0]
-  }]
-            };
-            var boulogne = {
+              }
+
+
+            var Nantes = {
                 _id: "c1",
-                name: 'Boulogne sur mer',
-                coordinates: {
-                    long: "50.7264",
-                    lat: "1.6147"
-                },
-                description: "",
-                picture: '/images/Boulogne/centre.jpg',
-                activities: []
-            };
-            Cities.remove({});
-            Cities.insert(aix);
-            Cities.insert(boulogne);
+                name: 'Nantes',
+                description: 'nantes city description HERE',
+                picture: '/images/Aix/aix.jpg',
+              }
+
+              db.cities.remove({});
+              db.cities.insert(Dublin);
+              db.cities.insert(Nantes);
+
+        //    ----- CREATING CATEGORIES -----
+            var Restaurant = {
+                _id: 'ca0',
+                name: 'Restaurant',
+                picture: '/images/Aix/aix.jpg'
+                }
+            var Fastfood = {
+                _id: 'ca1',
+                name: 'Fastfood',
+                picture: '/images/Aix/aix.jpg'
+                }
+            var Snack = {
+                _id: 'ca2',
+                name: 'Snack',
+                picture: '/images/Aix/aix.jpg'
+                }
+            var Cafeteria = {
+                _id: 'ca3',
+                name: 'Cafeteria',
+                picture: '/images/Aix/aix.jpg'
+                }
+            var Bakery = {
+                _id: 'ca4',
+                name: 'Bakery',
+                picture: '/images/Aix/aix.jpg'
+                }
+            var Grill = {
+                _id: 'ca5',
+                name: 'Grill',
+                picture: '/images/Aix/aix.jpg'
+                }
+
+
+                db.categories.remove({});
+                db.categories.insert(Restaurant);
+                db.categories.insert(Fastfood);
+                db.categories.insert(Snack);
+                db.categories.insert(Cafeteria);
+                db.categories.insert(Bakery);
+                db.categories.insert(Grill);
+
+      //      ----- CREATING ACTIVITIES -----
+            var activity0 = {
+                _id: 'a0',
+                category: Restaurant._id,
+                name: 'De Grasso',
+                price: '23.00',
+                address: 'Main Street, Lens, France',
+                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                rating: '9',
+                comments: [{
+                  user: {
+                  _id: derek._id,
+                  email: derek.emails[0].address
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["restaurant", "degrassso", "cheap"]
+                }
+            var activity1 = {
+                _id: 'a1',
+                category: Fastfood._id,
+                name: 'Pizzeria',
+                price: '20.00',
+                address: 'Somewhere, here, France',
+                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                rating: '8',
+                comments: [{
+                  user: {
+                  _id: derek._id,
+                  email: derek.emails[0].address
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["fastfood", "pizza", "cheap"]
+                }
+            var activity2 = {
+                _id: 'a2',
+                category: Bakery._id,
+                name: 'Local Bakery',
+                price: '4.00',
+                address: 'Side Street, main road, France',
+                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                rating: '7',
+                comments: [{
+                  user: {
+                  _id: derek._id,
+                  email: derek.emails[0].address
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["bakery", "bread", "cheap"]
+                }
+
+            db.activities.remove({});
+            db.activities.insert(activity0);
+            db.activities.insert(activity1);
+            db.activities.insert(activity2);
         },
     })
 }
