@@ -1,0 +1,55 @@
+.clearboth {
+    clear: both;
+}
+
+#list-activities-all-content {
+    background-color: #111111;
+}
+
+#title-list-activities {
+    font-size: 2rem;
+    text-align: center;
+    color: #444444;
+    font-weight: bold;
+}
+
+#subtitle-list-activities {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ff9030;
+    margin-top: -10px;
+}
+
+
+#list-content {
+    width: 60%;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.activity-object {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.activity-object a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.activity-image {
+    float: left;
+    width: 40%;
+    height: 200px;
+}
+
+.activity-title-description {
+    float: right;
+    width: 60%;
+}

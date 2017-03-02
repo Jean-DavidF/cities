@@ -11,11 +11,14 @@ Router.route("/choice", {
     template: "choice"
 });
 
+Router.route("/list-activities", {
+    template: "list-activities"
+});
+
 Router.route("/city/:id", function() {
     var city = Cities.findOne({_id : this.params.id})
-    if(typeof city == "undefined") 
+    if(typeof city == "undefined")
         this.render("notFound");
     else
         this.render("city",{data : city});
 });
-
