@@ -12,7 +12,7 @@ Router.route("/choice", {
 });
 
 Router.route("/list-activities", {
-    template: "list-activities"
+    template: "listActivities"
 });
 
 Router.route("/city/:id", function() {

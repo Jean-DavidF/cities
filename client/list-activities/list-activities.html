@@ -1,37 +1,36 @@
-<template name="list-activities">
+<template name="listActivities">
     <div id="list-activities-all-content">
-    <h1 id="title-list-activities">There is a list of differents restaurant</h1>
-    <p id="subtitle-list-activities">Choose your favorite !</p>
-    
-    <div id="list-content">
-        <div class="activity-object">
+        
+        <div id="banner" style="background: url('{{city1.picture}}') no-repeat center; background-size: cover;">
+            <h1>Take a break.</h1>
+            <p>in {{city1.name}}.</p>
+        </div>
+        
+        <h1 id="title-list-activities">There is a list of differents restaurant</h1>
+        <p id="subtitle-list-activities">Choose your favorite !</p>
+
+        <div id="list-content">
             <a href="">
-                <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
-                </div>
-                <div class="activity-title-description">
-                    <h2 class="activity-title">Activity name</h2>
-                    <p class="activity-description">Activity description !</p>
+                <div class="activity-object">
+                    <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
+                    </div>
+                    <div class="activity-title-description">
+                        <h2 class="activity-title">Activity name</h2>
+                        <p class="activity-description">Activity description !</p>
+                    </div>
                 </div>
             </a>
+        
+            <div class="clearboth clearboth-list-activities"></div>
         </div>
-        <div class="activity-object">
-            <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
-            </div>
-            <div class="activity-title-description">
-                <h2 class="activity-title">Activity name</h2>
-                <p class="activity-description">Activity description !</p>
-            </div>
-        </div>
-        <div class="activity-object">
-            <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
-            </div>
-            <div class="activity-title-description">
-                <h2 class="activity-title">Activity name</h2>
-                <p class="activity-description">Activity description !</p>
-            </div>
-        </div>
-        <div class="clearboth"></div>
     </div>
-    </div>
+    
+    <style>
+        
+        html {
+            background-color: white;
+        } 
+        
+    </style>
     
 </template>
