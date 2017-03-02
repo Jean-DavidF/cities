@@ -1,0 +1,120 @@
+----- CREATING CITIES -----
+var Dublin = {
+    _id: "c1",
+    name: 'Dublin',
+    description: 'dublin city description HERE',
+    picture: '/images/Aix/aix.jpg',
+  }
+
+var Nantes = {
+    _id: "c1",
+    name: 'Nantes',
+    description: 'nantes city description HERE',
+    picture: '/images/Aix/aix.jpg',
+  }
+
+  db.cities.remove({});
+  db.cities.insert(Dublin);
+  db.cities.insert(Nantes);
+
+----- CREATING CATEGORIES -----
+var Restaurant = {
+    _id: 'ca0',
+    name: 'Restaurant',
+    picture: '/images/Aix/aix.jpg'
+    }
+var Fastfood = {
+    _id: 'ca1',
+    name: 'Fastfood',
+    picture: '/images/Aix/aix.jpg'
+    }
+var Snack = {
+    _id: 'ca2',
+    name: 'Snack',
+    picture: '/images/Aix/aix.jpg'
+    }
+var Cafeteria = {
+    _id: 'ca3',
+    name: 'Cafeteria',
+    picture: '/images/Aix/aix.jpg'
+    }
+var Bakery = {
+    _id: 'ca4',
+    name: 'Bakery',
+    picture: '/images/Aix/aix.jpg'
+    }
+var Grill = {
+    _id: 'ca5',
+    name: 'Grill',
+    picture: '/images/Aix/aix.jpg'
+    }
+
+
+    db.categories.remove({});
+    db.categories.insert(Restaurant);
+    db.categories.insert(Fastfood);
+    db.categories.insert(Snack);
+    db.categories.insert(Cafeteria);
+    db.categories.insert(Bakery);
+    db.categories.insert(Grill);
+
+----- CREATING ACTIVITIES -----
+var activity0 = {
+    _id: 'a0',
+    category: Restaurant._id,
+    name: 'De Grasso',
+    price: '23.00',
+    address: 'Main Street, Lens, France',
+    pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+    rating: '9',
+    comments: [{
+      user: {
+      _id: derek._id,
+      email: derek.emails[0].address
+      },
+      date: new Date(),
+      comment: "perfect, worth every single cent"
+      }],
+    tags: ["restaurant", "degrassso", "cheap"]
+    }
+var activity1 = {
+    _id: 'a1',
+    category: Fastfood._id,
+    name: 'Pizzeria',
+    price: '20.00',
+    address: 'Somewhere, here, France',
+    pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+    rating: '8',
+    comments: [{
+      user: {
+      _id: derek._id,
+      email: derek.emails[0].address
+      },
+      date: new Date(),
+      comment: "perfect, worth every single cent"
+      }],
+    tags: ["fastfood", "pizza", "cheap"]
+    }
+var activity2 = {
+    _id: 'a2',
+    category: Bakery._id,
+    name: 'Local Bakery',
+    price: '4.00',
+    address: 'Side Street, main road, France',
+    pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+    rating: '7',
+    comments: [{
+      user: {
+      _id: derek._id,
+      email: derek.emails[0].address
+      },
+      date: new Date(),
+      comment: "perfect, worth every single cent"
+      }],
+    tags: ["bakery", "bread", "cheap"]
+    }
+
+db.activities.remove({});
+db.activities.insert(activity0);
+db.activities.insert(activity1);
+db.activities.insert(activity2);
