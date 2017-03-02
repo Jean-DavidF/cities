@@ -12,7 +12,7 @@ Template.insertActivity.events({
             _id: myid
         });
        var activityId = Meteor.call("insertActivity",
-            $("#name2").val(),
+            $("#name").val(),
             $('#nature').val(),
             $('#editor').val(),
             $('#pictures').val(),

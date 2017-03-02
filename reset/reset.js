@@ -161,16 +161,16 @@ if (Meteor.isServer) {
             var Dublin = {
                 _id: "c0",
                 name: 'Dublin',
-                description: 'dublin city description HERE',
-                picture: '/images/Aix/aix.jpg',
+                description: 'Dublin is the capital and largest city of Ireland. Dublin is in the province of Leinster on Ireland seast coast, at the mouth of the River Liffey. The city has an urban area population of 1,345,402 Founded as a Viking settlement, the Kingdom of Dublin became Irelands principal city following the Norman invasion. The city expanded rapidly from the 17th centuryand was briefly the second largest city in the British Empire before the Acts of Union in 1800. Following the partition of Ireland in 1922, Dublin became thecapital of the Irish Free State, later renamed Ireland.The population of the Greater Dublin Area, as of 2016, was 1,904,806 people.',
+                picture: '/images/Dublin/dublin-1.jpg',
               }
 
 
             var Nantes = {
                 _id: "c1",
                 name: 'Nantes',
-                description: 'nantes city description HERE',
-                picture: '/images/Aix/aix.jpg',
+                description: 'Nantes is a city in western France, located on the Loire River, 50 km (31 mi) from the Atlantic coast. The city is the sixth largest in France, with almost 300,000 inhabitants within its administrative limits, and an urban area of 600,000 inhabitants. Together with Saint-Nazaire, a seaport located on the Loire estuary, Nantes forms the main metropolis of north-western France.Nantes is the administrative seat of the Loire-Atlantique département and of the Pays de la Loire région, one of the 18 regions of France. Historically and culturally, Nantes belongs to Brittany, a region and former duchy and province. The fact that it is not part of the modern administrative region of Brittany is subject to debate.',
+                picture: '/images/Nantes/nantes-1.jpg',
               }
 
               db.cities.remove({});
@@ -203,7 +203,6 @@ if (Meteor.isServer) {
                 name: 'Grill',
                 }
 
-
                 db.categories.remove({});
                 db.categories.insert(Restaurant);
                 db.categories.insert(Fastfood);
@@ -215,7 +214,7 @@ if (Meteor.isServer) {
       //      ----- CREATING ACTIVITIES -----
             var activity0 = {
                 _id: 'a0',
-                category: Restaurant._id,
+                category: 'ca0',
                 name: 'De Grasso',
                 price: '23.00',
                 address: 'Main Street, Lens, France',
@@ -223,8 +222,8 @@ if (Meteor.isServer) {
                 rating: '9',
                 comments: [{
                   user: {
-                  _id: derek._id,
-                  email: derek.emails[0].address
+                  _id: 'u0',
+                  email: 'myemail@hello.com'
                   },
                   date: new Date(),
                   comment: "perfect, worth every single cent"
@@ -233,7 +232,7 @@ if (Meteor.isServer) {
                 }
             var activity1 = {
                 _id: 'a1',
-                category: Fastfood._id,
+                category: 'ca0',
                 name: 'Pizzeria',
                 price: '20.00',
                 address: 'Somewhere, here, France',
@@ -241,8 +240,8 @@ if (Meteor.isServer) {
                 rating: '8',
                 comments: [{
                   user: {
-                  _id: derek._id,
-                  email: derek.emails[0].address
+                  _id: 'u1',
+                  email: 'myemail@hello.com'
                   },
                   date: new Date(),
                   comment: "perfect, worth every single cent"
@@ -251,7 +250,7 @@ if (Meteor.isServer) {
                 }
             var activity2 = {
                 _id: 'a2',
-                category: Bakery._id,
+                category: 'ca0',
                 name: 'Local Bakery',
                 price: '4.00',
                 address: 'Side Street, main road, France',
@@ -259,8 +258,8 @@ if (Meteor.isServer) {
                 rating: '7',
                 comments: [{
                   user: {
-                  _id: derek._id,
-                  email: derek.emails[0].address
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
                   },
                   date: new Date(),
                   comment: "perfect, worth every single cent"
