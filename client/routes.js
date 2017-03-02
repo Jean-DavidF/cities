@@ -24,10 +24,50 @@ Router.route("/city/:id", function() {
 });
 
 
-Router.route("/list-activities/:id", function() {
+Router.route("/restaurants/:id", function() {
     var listactivities = Cities.findOne({_id : this.params.id})
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("listActivities",{data : listactivities});
+        this.render("activitiesRestaurant",{data : listactivities});
+});
+
+Router.route("/fastfoods/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesFastfood",{data : listactivities});
+});
+
+Router.route("/snacks/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesSnack",{data : listactivities});
+});
+
+Router.route("/cafeterias/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesCafeteria",{data : listactivities});
+});
+
+Router.route("/bakerys/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesBakery",{data : listactivities});
+});
+
+Router.route("/grills/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesGrill",{data : listactivities});
 });

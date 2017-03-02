@@ -1,0 +1,36 @@
+<template name="activitiesBakery">
+    <div id="list-activities-all-content">
+        
+        <div id="banner" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
+            <h1>Take a break.</h1>
+            <p>in {{name}}.</p>
+        </div>
+        
+        <h1 id="title-list-activities">There is a list of differents bakerys in {{name}}</h1>
+        <p id="subtitle-list-activities">Choose your favorite !</p>
+
+        <div id="list-content">
+            <a href="">
+                <div class="activity-object">
+                    <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
+                    </div>
+                    <div class="activity-title-description">
+                        <h2 class="activity-title">Activity name</h2>
+                        <p class="activity-description">Activity description !</p>
+                    </div>
+                </div>
+            </a>
+        
+            <div class="clearboth clearboth-list-activities"></div>
+        </div>
+    </div>
+    
+    <style>
+        
+        html {
+            background-color: white;
+        } 
+        
+    </style>
+
+</template>
