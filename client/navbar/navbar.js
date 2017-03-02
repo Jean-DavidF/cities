@@ -10,7 +10,10 @@ Template.navbar.events({
     },
     'click #cross-icon': function (e) {
         $("#menu-open").addClass('displaynone');
-    }
+    },
+    'click .menu-button': function(e) {
+        $("#menu-open").addClass('displaynone');
+    },
 });
 
 Template.navbar.helpers({
