@@ -11,9 +11,9 @@ Router.route("/choice", {
     template: "choice"
 });
 
-Router.route("/list-activities", {
+/*Router.route("/list-activities", {
     template: "listActivities"
-});
+});*/
 
 Router.route("/city/:id", function() {
     var city = Cities.findOne({_id : this.params.id})
@@ -21,4 +21,13 @@ Router.route("/city/:id", function() {
         this.render("notFound");
     else
         this.render("city",{data : city});
+});
+
+
+Router.route("/list-activities/:id", function() {
+    var listactivities = Cities.findOne({_id : this.params.id})
+    if(typeof listactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("listActivities",{data : listactivities});
 });
