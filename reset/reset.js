@@ -181,32 +181,26 @@ if (Meteor.isServer) {
             var Restaurant = {
                 _id: 'ca0',
                 name: 'Restaurant',
-                picture: '/images/Aix/aix.jpg'
                 }
             var Fastfood = {
                 _id: 'ca1',
                 name: 'Fastfood',
-                picture: '/images/Aix/aix.jpg'
                 }
             var Snack = {
                 _id: 'ca2',
                 name: 'Snack',
-                picture: '/images/Aix/aix.jpg'
                 }
             var Cafeteria = {
                 _id: 'ca3',
                 name: 'Cafeteria',
-                picture: '/images/Aix/aix.jpg'
                 }
             var Bakery = {
                 _id: 'ca4',
                 name: 'Bakery',
-                picture: '/images/Aix/aix.jpg'
                 }
             var Grill = {
                 _id: 'ca5',
                 name: 'Grill',
-                picture: '/images/Aix/aix.jpg'
                 }
 
 
