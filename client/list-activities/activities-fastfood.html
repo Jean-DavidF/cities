@@ -1,15 +1,16 @@
-<template name="listActivities">
+<template name="activitiesFastfood">
     <div id="list-activities-all-content">
-
-        <div id="banner" style="background: url('{{city1.picture}}') no-repeat center; background-size: cover;">
+        
+        <div id="banner" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
             <h1>Take a break.</h1>
-            <p>in {{city1.name}}.</p>
+            <p>in {{name}}.</p>
         </div>
-        <h1 id="title-list-activities">There is a list of differents restaurant</h1>
+        
+        <h1 id="title-list-activities">There is a list of differents fast-foods in {{name}}</h1>
         <p id="subtitle-list-activities">Choose your favorite !</p>
 
         <div id="list-content">
-            <!-- <a href="">
+            <a href="">
                 <div class="activity-object">
                     <div class="activity-image" style="background: url('/grill.jpg') no-repeat center; background-size: cover;">
                     </div>
@@ -18,20 +19,18 @@
                         <p class="activity-description">Activity description !</p>
                     </div>
                 </div>
-            </a> -->
-
-            {{>displayActivities}}
-
+            </a>
+        
             <div class="clearboth clearboth-list-activities"></div>
         </div>
     </div>
-
+    
     <style>
-
+        
         html {
             background-color: white;
-        }
-
+        } 
+        
     </style>
 
 </template>
