@@ -1,33 +1,32 @@
-<template name="insertActivity">
+<template name="insertActivities">
 <div id="insert-activity">
-    <h1>Wanna add a <span class="new-place">new</span> place ?</h1>
-    <p>Complete the form below</p>
+    <h1>Want to add a <span class="new-place">new</span> place?</h1>
+    <p>Just complete our form!</p>
 
     <form style="clear:left;">
         <div class="id-activity">
             <input id="id" type="hidden" value="c0">
+            <input id="category" type="hidden" value="ca4">
         </div>
         <div class="name2-activity">
             <input id="name" type="text" placeholder="Activity name"><br>
         </div>
         <div class="nature-activity" >
-            <input id="nature" type="text" placeholder="Nature"><br>
+            <input id="price" type="text" placeholder="Price"><br>
         </div>
         <div class="editor-activity">
-            <input id="editor" type="text" placeholder="Editor"><br>
+            <input id="address" type="text" placeholder="Address"><br>
         </div>
         <div class="pictures-activity">
-            <input id="pictures" type="text" placeholder="Array of images"><br>
+            <input id="pictures" type="text" value="/images/Aix/granet2.jpg" placeholder="A picture"><br>
         </div>
         <div class="comments-activity">
-            <input id="comments" type="text" placeholder="Comment object"><br>
-        </div>
-        <div class="url-activity">
-            <input id="url" type="text" placeholder="URL"><br>
+            <input id="rating" type="text" placeholder="Rating 1-10"><br>
         </div>
         <div class="btn-activity">
             <button id="btn">Add !</button><br>
         </div>
+
     </form>
 </div>
 

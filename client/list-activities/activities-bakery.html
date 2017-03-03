@@ -25,7 +25,9 @@
           <div class="clearboth clearboth-list-activities"></div>
       </div>
   </div>
-
+  {{#if currentUser}}
+  {{>insertActivities}}
+{{/if}}
   <style>
 
       html {
