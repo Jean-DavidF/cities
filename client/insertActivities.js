@@ -12,6 +12,7 @@ Template.insertActivities.events({
        Meteor.call("insertActivities",
             $("#category").val(),
             $("#name").val(),
+            $("#city").val(),
             $('#price').val(),
             $('#address').val(),
             $('#pictures').val(),
