@@ -363,8 +363,8 @@ if (Meteor.isServer) {
                 name: 'Supermacs',
                 city : "c0",
                 price: '10',
-                address: 'This restaurant offers contemporary cuisine in a purple and gold baroque decor for a cozy ambience.',
-                pictures: "/images/Nantes/leboudoir.jpg",
+                address: 'The first Supermac’s opened its door in 1978 on Main Street, Ballinasloe, Co. Galway. Since that first opening Supermac’s restaurants have become a firm fixture in towns and cities around Ireland. Today Supermac’s is the largest indigenous fast food restaurant group with a policy of continued expansion and growth.The managing director of Supermac’s, Pat McDonagh, identified an opportunity in the locality for a fast food offering while teaching in Kilrickle in Co.Galway. From that first opportunity in Ballinasloe, Supermac’s has grown steadily, bringing its unique brand of wholesomeness and attention to detail to its chain of restaurants across Ireland. The success of the company can be attributed to a number of factors: a unique and innovative menu, a commitment to quality across all aspects of the business and a strong work ethic define Supermac’s as the number one franchise in Ireland',
+                pictures: "/images/Dublin/supermacs.jpg",
                 rating: '7.8',
                 comments: [{
                   user: {
@@ -374,17 +374,17 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["restaurant"]
+                tags: ["spermacs", "fastfood"]
                 }
             var activity8 = {
                 _id: 'a8',
-                category: 'ca1',
-                name: 'Burger House',
-                price: '12',
+                category: 'ca2',
+                name: 'Stript Snacks',
+                price: '8',
                 city : "c0",
-                address: 'Burgers made with artisan bread and milkshakes in a restaurant with simple furnishings and yellow walls.',
-                pictures: "/images/Nantes/burgerhouse.jpg",
-                rating: '8.8',
+                address: 'Nicest biltong available in the UK or Ireland. Great for a late afternoon snack or a brilliant source of protein after the gym.',
+                pictures: "/images/Dublin/stript.jpg",
+                rating: '8',
                 comments: [{
                   user: {
                   _id: 'u2',
@@ -393,17 +393,17 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["fastfood", "burger"]
+                tags: ["snack", "protein"]
                 }
             var activity9 = {
                 _id: 'a9',
                 category: 'ca3',
-                name: 'Flunch',
-                price: '7',
+                name: 'Queen of Tarts',
+                price: '12',
                 city : "c0",
-                address: 'Self-service cafeteria chain with unlimited vegetable meals and a casual atmosphere.',
-                pictures: "/images/Nantes/flucnh.jpg",
-                rating: '6.8',
+                address: 'Queen of Tarts opened its doors for the first time in 1998. Sisters Regina and Yvonne Fallon trained as pastry chefs in New York City in the 1990s, returning home to Ireland to establish and run their own café. They knew what they wanted: to create a homely and welcoming space which offered the best breakfasts and weekend brunch in Dublin, the tastiest lunches – and the finest cakes, scones and brownies in the business. Not to mention, of course, the most sublime savoury and sweet tarts too!Queen of Tarts quickly established an iconic reputation – and today, sixteen years on, it’s still flourishing. Everything is baked and prepared fresh on the premises; and Yvonne and Regina still use only the best ingredients – Lavazza coffee beans in their coffee machines, Callebaut fine Belgian chocolate in their chocolate fudge cake and muffins, and of course the freshest Bramley’s Irish apples in their apple crumbles. The home-baked buttermilk brown breads are still moist and flavoursome, the soups are lovingly made daily – and the fabulous cakes and signature tarts still draw customers from far and wide. And now, a perfectly judged wine list is another reason to drop by.',
+                pictures: "/images/Dublin/queen.jpg",
+                rating: '9',
                 comments: [{
                   user: {
                   _id: 'u2',
@@ -417,12 +417,12 @@ if (Meteor.isServer) {
             var activity10 = {
                 _id: 'a10',
                 category: 'ca4',
-                name: 'La Boulangerie Honoré',
-                price: '3',
+                name: 'Thunders Home Bakery',
+                price: '3.5',
                 city : "c0",
-                address: 'A bakery is a type of retail bread making and selling. This activity has been the subject of much attention on the part of the governed and rulers because of its importance in food.',
-                pictures: "/images/Nantes/boulangerie.jpg",
-                rating: '9.8',
+                address: 'From christening cakes to birthday cakes and wedding cakes to novelty cakes, we can make whatever you want. Our cakes are made from fresh cream and butter cream and can be bought straight from our shops or ordered online with next day delivery.From our first shop in Drumcondra 1969, we now have seven around Dublin and two cafes, with more on the way. Yet we haven’t forgotten our origins and what makes us special. We are a traditional home bakery that makes fresh bread, cakes and confectionery.',
+                pictures: "/images/Dublin/bakery.jpg",
+                rating: '9',
                 comments: [{
                   user: {
                   _id: 'u2',
@@ -436,11 +436,11 @@ if (Meteor.isServer) {
             var activity11 = {
                 _id: 'a11',
                 category: 'ca5',
-                name: 'Le Nez Grillé',
-                price: '20',
+                name: 'Whitefriar Grill',
+                price: '35',
                 city : "c0",
-                address: 'For lovers of grilled meat. Good welcome, very intimate. Homemade products.',
-                pictures: "/images/Nantes/grill.jpg",
+                address: 'Whitefriar Grill’s Sunday Night Ribs ‘N’ Rump is nirvana for meat lovers everywhere! Stock up on the protein for the week ahead with a 14oz char-grilled rump steak, sticky BBQ baby back ribs, bacon ribs, honey glazed lamb ribs all served on a WFG chopping board, add to this two sides from (tobacco onions, greens, fries, balsamic onion & mushrooms) and you have a meat feast! All for 40 euros for two!',
+                pictures: "/images/Dublin/grill.jpg",
                 rating: '8.4',
                 comments: [{
                   user: {
