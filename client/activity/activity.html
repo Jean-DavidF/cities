@@ -1,3 +1,52 @@
 <template name="activitiesPage">
-    <p>You are on the activity page. {{city.name}} <br /> <br /> {{activity.name}} <br /> </p>
+    <div id="banner" style="background: url('{{activity.pictures}}') no-repeat center; background-size: cover;">
+        <h1>{{activity.name}}</h1>
+        <p>in {{city.name}}.</p>
+    </div>
+    
+    <div id="description-activity-content">
+        <h1 id="description-activity-title">Description</h1>
+        <p id="description-activity">{{activity.address}}</p>
+    </div>
+    
+    <div id="more-informations-activity">
+    
+        <div id="activity-price">
+            <h1>Price</h1>
+            <p>{{activity.price}}€</p>
+        </div>
+
+        <div id="activity-rating">
+            <h1>Rating</h1>
+            <p>{{activity.rating}}/10</p>
+        </div>
+        
+    </div>
+    
+    <div id="activity-comments-content">
+        
+        <h1 id="activity-comments-bigtitle">Comments</h1>
+        
+        
+        <div class="activity-comments-field">
+            <p class="activity-comments-username">MyUsername</p>
+            <p class="activity-comments-subject">This is the subject of the comment</p>
+            <p class="activity-comments-comment"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec dignissim neque, eu tincidunt velit. Suspendisse a vulputate magna. Nulla facilisi. Morbi auctor erat vitae massa efficitur euismod. Donec est nunc, congue ut justo sit amet, laoreet consectetur ante. Aliquam et sem egestas, maximus mi quis, dictum tellus. Mauris pellentesque turpis neque, ut porta mauris cursus commodo. Etiam eu semper ante, consequat dictum tortor. Donec eget sapien vitae sapien sodales luctus. Etiam vitae mollis tellus. Vestibulum lacinia elit nunc, eu consectetur diam convallis sed. Nunc ac eros ligula. Phasellus elementum luctus dui, a malesuada tortor ultrices dictum. Pellentesque venenatis dapibus euismod. Aenean iaculis augue urna. Vivamus iaculis consequat sapien eget lobortis.
+
+Vivamus eget dapibus nisl. Etiam lorem urna, imperdiet sit amet erat vitae, facilisis iaculis ante. Donec risus neque, scelerisque ut leo efficitur, convallis pellentesque metus. Nam quis rhoncus ex. Nullam non dapibus dolor, quis consequat lorem. Integer lacinia malesuada tortor nec varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas imperdiet nec neque vitae efficitur. Ut id ante nunc. Donec aliquam consequat aliquet. Ut aliquam et lorem at tempor. Morbi consequat libero at leo consectetur porttitor. Suspendisse volutpat dictum euismod. Aliquam vel ex consectetur, tempus felis facilisis, dapibus velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget urna metus. </p>
+        </div>
+        
+        <p class="wanna-add-comment">You would like to add a comment ? please {{>loginButtons}} first.</p>
+        
+        {{#if currentUser}}
+            <style>
+                .wanna-add-comment {
+                    display: none;
+                }
+            </style>
+            {{>addComment}}
+        {{/if}}
+        
+    </div>
+    
 </template>
