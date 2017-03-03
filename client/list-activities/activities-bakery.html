@@ -1,12 +1,12 @@
 <template name="activitiesBakery">
   <div id="list-activities-all-content">
 
-      <div id="banner" style="background: url('{{picture}}') no-repeat center; background-size: cover;">
+      <div id="banner" style="background: url('{{city.picture}}') no-repeat center; background-size: cover;">
           <h1>Take a break.</h1>
-          <p>in {{name}}.</p>
+          <p>in {{city.name}}.</p>
       </div>
 
-      <h1 id="title-list-activities">There is a list of differents fast-foods in {{name}}</h1>
+      <h1 id="title-list-activities">There is a list of differents fast-foods in {{city.name}}</h1>
       <p id="subtitle-list-activities">Choose your favorite !</p>
 
       <div id="list-content">
@@ -20,7 +20,18 @@
                   </div>
               </div>
           </a> -->
-          {{>displayActivities}}
+        {{#each a in Activities}}
+              <a href="/activity/{{a._id}}">
+                  <div class="activity-object">
+                       <div class="activity-image" style="background: url('{{picture a}}') no-repeat center; background-size: cover;"></div>
+                      <div class="activity-title-description">
+                          <h2 class="activity-title">{{a.name}}</h2>
+                          <p class="activity-description">{{a.address}}</p>
+                      </div>
+                  </div>
+              </a>
+  {{/each}}
+
 
           <div class="clearboth clearboth-list-activities"></div>
       </div>

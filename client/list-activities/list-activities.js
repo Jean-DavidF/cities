@@ -1,4 +1,4 @@
-Template.listActivities.helpers({
+/*Template.listActivities.helpers({
     "city1":function(){
         return Cities.findOne({_id : "c0"});
     },
@@ -6,3 +6,5 @@ Template.listActivities.helpers({
         return Cities.findOne({_id : "c1"});
     }
 });
+
+*/

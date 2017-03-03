@@ -29,7 +29,7 @@ Router.route("/restaurants/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesRestaurant",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca0"}});
 });
 
 Router.route("/fastfoods/:id", function() {
@@ -37,7 +37,7 @@ Router.route("/fastfoods/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesFastfood",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca1"}});
 });
 
 Router.route("/snacks/:id", function() {
@@ -45,7 +45,7 @@ Router.route("/snacks/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesSnack",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca2"}});
 });
 
 Router.route("/cafeterias/:id", function() {
@@ -53,7 +53,7 @@ Router.route("/cafeterias/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesCafeteria",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca3"}});
 });
 
 Router.route("/bakerys/:id", function() {
@@ -61,7 +61,7 @@ Router.route("/bakerys/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesBakery",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca4"}});
 });
 
 Router.route("/grills/:id", function() {
@@ -69,13 +69,15 @@ Router.route("/grills/:id", function() {
     if(typeof listactivities == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesGrill",{data : listactivities});
+        this.render("activitiesBakery",{data : {city : listactivities, category  : "ca5"}});
 });
 
-Router.route("/activity/:id", function() {
+
+
+/*Router.route("/activity/:id", function() {
     var pageactivities = Activities.findOne({_id : this.params.id})
     if(typeof pageactivities == "undefined")
         this.render("notFound");
     else
         this.render("activitiesPage",{data : pageactivities});
-});
+});*/
