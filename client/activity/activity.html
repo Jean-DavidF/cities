@@ -1,3 +1,51 @@
 <template name="activitiesPage">
-    <p>You are on the activity page. {{city.name}} <br /> <br /> {{activity.name}} <br /> </p>
+    <div id="banner" style="background: url('{{activity.pictures}}') no-repeat center; background-size: cover;">
+        <h1>{{activity.name}}</h1>
+        <p>in {{city.name}}.</p>
+    </div>
+
+    <div id="description-activity-content">
+        <h1 id="description-activity-title">Description</h1>
+        <p id="description-activity">{{activity.address}}</p>
+    </div>
+
+    <div id="more-informations-activity">
+
+        <div id="activity-price">
+            <h1>Price</h1>
+            <p>{{activity.price}}€</p>
+        </div>
+
+        <div id="activity-rating">
+            <h1>Rating</h1>
+            <p>{{activity.rating}}/10</p>
+        </div>
+
+    </div>
+
+    <div id="activity-comments-content">
+
+        <h1 id="activity-comments-bigtitle">Comments</h1>
+
+{{#each c in Activities}}
+        <div class="activity-comments-field">
+            <p class="activity-comments-username">{{c.user}}</p>
+            <p class="activity-comments-subject">{{c.date}}</p>
+            <p class="activity-comments-comment"> {{c.comment}} </p>
+        </div>
+          {{/each}}
+
+        <p class="wanna-add-comment">You would like to add a comment ? please {{>loginButtons}} first.</p>
+
+        {{#if currentUser}}
+            <style>
+                .wanna-add-comment {
+                    display: none;
+                }
+            </style>
+            {{>addComment}}
+        {{/if}}
+
+    </div>
+
 </template>
