@@ -27,15 +27,14 @@
 
         <h1 id="activity-comments-bigtitle">Comments</h1>
 
-{{#each c in Activities}}
+        {{#each c in activity.comments}}
         <div class="activity-comments-field">
-            <p class="activity-comments-username">{{c.user}}</p>
+            <p class="activity-comments-username">{{c.user.email}}</p>
             <p class="activity-comments-subject">{{c.date}}</p>
             <p class="activity-comments-comment"> {{c.comment}} </p>
         </div>
-          {{/each}}
-
-        <p class="wanna-add-comment">You would like to add a comment ? please {{>loginButtons}} first.</p>
+        {{/each}}
+        <p class="wanna-add-comment">You would like to add a comment ? please login first.</p>
 
         {{#if currentUser}}
             <style>
