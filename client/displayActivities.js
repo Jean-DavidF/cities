@@ -14,8 +14,8 @@ picture : function(a) {
 //   "click button":function(template){
 //     template.preventDefault();
 
-//Activities.update({_id : Template.currentData()._id},{$push :{comments : { user : {_id : Meteor.user()._id, email : Meteor.user().email[0].address}, date : new Date(), comment : }}}
-//
+// Activities.update({_id : Template.currentData()._id},{$push :{comments : { user : {_id : Meteor.user()._id, email : Meteor.user().email[0].address}, date : new Date(), comment : }}}
+
 //     Meteor.call("insertCity",
 //     $("#name").val(),
 //     $('#coordinates').val(),
