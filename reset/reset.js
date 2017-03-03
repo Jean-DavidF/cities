@@ -338,6 +338,120 @@ if (Meteor.isServer) {
                   }],
                 tags: ["meat", "grill"]
                 }
+            var activity6 = {
+                _id: 'a6',
+                category: 'ca0',
+                name: 'Dax Restaurant',
+                city : "c0",
+                price: '45',
+                address: 'Welcome to Dax Restaurant, one of the best fine dining restaurants in Dublin city centre offering modern Irish-French cuisine for lunch and dinner Tuesday to Saturday.Our intimate Georgian basement dining room retains many period features. The unique layout with open fire, hard-wood ceilings, fine table linens, modern art, original flag-stone floors and rough rendered walls lends the feel of a wealthy, rustic country manor house in rural France.',
+                pictures: "/images/Dublin/dax.jpg",
+                rating: '9.2',
+                comments: [{
+                  user: {
+                  _id: 'u0',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["restaurant", "dax"]
+                }
+            var activity7 = {
+                _id: 'a7',
+                category: 'ca1',
+                name: 'Supermacs',
+                city : "c0",
+                price: '10',
+                address: 'This restaurant offers contemporary cuisine in a purple and gold baroque decor for a cozy ambience.',
+                pictures: "/images/Nantes/leboudoir.jpg",
+                rating: '7.8',
+                comments: [{
+                  user: {
+                  _id: 'u1',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["restaurant"]
+                }
+            var activity8 = {
+                _id: 'a8',
+                category: 'ca1',
+                name: 'Burger House',
+                price: '12',
+                city : "c0",
+                address: 'Burgers made with artisan bread and milkshakes in a restaurant with simple furnishings and yellow walls.',
+                pictures: "/images/Nantes/burgerhouse.jpg",
+                rating: '8.8',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["fastfood", "burger"]
+                }
+            var activity9 = {
+                _id: 'a9',
+                category: 'ca3',
+                name: 'Flunch',
+                price: '7',
+                city : "c0",
+                address: 'Self-service cafeteria chain with unlimited vegetable meals and a casual atmosphere.',
+                pictures: "/images/Nantes/flucnh.jpg",
+                rating: '6.8',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["cafeteria", "familly"]
+                }
+            var activity10 = {
+                _id: 'a10',
+                category: 'ca4',
+                name: 'La Boulangerie Honoré',
+                price: '3',
+                city : "c0",
+                address: 'A bakery is a type of retail bread making and selling. This activity has been the subject of much attention on the part of the governed and rulers because of its importance in food.',
+                pictures: "/images/Nantes/boulangerie.jpg",
+                rating: '9.8',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["bakery", "bread"]
+                }
+            var activity11 = {
+                _id: 'a11',
+                category: 'ca5',
+                name: 'Le Nez Grillé',
+                price: '20',
+                city : "c0",
+                address: 'For lovers of grilled meat. Good welcome, very intimate. Homemade products.',
+                pictures: "/images/Nantes/grill.jpg",
+                rating: '8.4',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["meat", "grill"]
+                }
             console.log(activity0);
             Activities.remove({});
             Activities.insert(activity0);
@@ -346,6 +460,12 @@ if (Meteor.isServer) {
             Activities.insert(activity3);
             Activities.insert(activity4);
             Activities.insert(activity5);
+            Activities.insert(activity6);
+            Activities.insert(activity7);
+            Activities.insert(activity8);
+            Activities.insert(activity9);
+            Activities.insert(activity10);
+            Activities.insert(activity11);
         },
     })
 }
