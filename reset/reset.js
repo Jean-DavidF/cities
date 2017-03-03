@@ -171,7 +171,6 @@ if (Meteor.isServer) {
 
               }
 
-
             var Nantes = {
                 _id: "c1",
                 name: 'Nantes',
@@ -180,6 +179,7 @@ if (Meteor.isServer) {
                     lat: "47.2172500",
                 },
                 description: 'Nantes is a city in western France, located on the Loire River, 50 km (31 mi) from the Atlantic coast. The city is the sixth largest in France, with almost 300,000 inhabitants within its administrative limits, and an urban area of 600,000 inhabitants. Together with Saint-Nazaire, a seaport located on the Loire estuary, Nantes forms the main metropolis of north-western France.Nantes is the administrative seat of the Loire-Atlantique département and of the Pays de la Loire région, one of the 18 regions of France. Historically and culturally, Nantes belongs to Brittany, a region and former duchy and province. The fact that it is not part of the modern administrative region of Brittany is subject to debate.',
+
 
                 picture: "/images/Nantes/nantes-1.jpg"
 
@@ -231,7 +231,7 @@ if (Meteor.isServer) {
                 city : "c1",
                 price: '23.00',
                 address: 'Main Street, Lens, France',
-                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                pictures: "/images/Aix/granet1.jpg",
                 rating: '9',
                 comments: [{
                   user: {
@@ -250,7 +250,7 @@ if (Meteor.isServer) {
                 city : "c0",
                 price: '20.00',
                 address: 'Somewhere, here, France',
-                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                pictures: "/images/Aix/granet1.jpg",
                 rating: '8',
                 comments: [{
                   user: {
@@ -269,7 +269,26 @@ if (Meteor.isServer) {
                 price: '4.00',
                 city : "c1",
                 address: 'Side Street, main road, France',
-                pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
+                pictures: "/images/Aix/granet1.jpg",
+                rating: '7',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["bakery", "bread", "cheap"]
+                }
+            var activity3 = {
+                _id: 'a3',
+                category: 'ca2',
+                name: 'Local Bakery',
+                price: '4.00',
+                city : "c1",
+                address: 'Side Street, main road, France',
+                pictures: "/images/Aix/granet1.jpg",
                 rating: '7',
                 comments: [{
                   user: {
@@ -286,6 +305,7 @@ if (Meteor.isServer) {
             Activities.insert(activity0);
             Activities.insert(activity1);
             Activities.insert(activity2);
+            Activities.insert(activity3);
         },
     })
 }

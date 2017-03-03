@@ -10,7 +10,7 @@ Meteor.methods({
       });
   },
 
-  insertActivities:function(category, name, price, address, pictures, rating, city) {
+  insertActivities:function(category, name, city, price, address, pictures, rating) {
     Activities.insert({
       "category":category,
       "name":name,
