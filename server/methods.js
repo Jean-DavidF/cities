@@ -27,7 +27,7 @@ Meteor.methods({
 });
 
 
-Meteor.methods({
+/*Meteor.methods({
   updateActivities:function(activityid, userid, email, comment) {
 Activities.update({
   _id : activityid},{$push :{
@@ -43,4 +43,4 @@ Activities.update({
       }
 );
 }
-});
+});*/
