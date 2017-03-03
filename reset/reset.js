@@ -166,7 +166,9 @@ if (Meteor.isServer) {
                     lat: "53.3330600",
                 },
                 description: 'Dublin is the capital and largest city of Ireland. Dublin is in the province of Leinster on Ireland seast coast, at the mouth of the River Liffey. The city has an urban area population of 1,345,402 Founded as a Viking settlement, the Kingdom of Dublin became Irelands principal city following the Norman invasion. The city expanded rapidly from the 17th centuryand was briefly the second largest city in the British Empire before the Acts of Union in 1800. Following the partition of Ireland in 1922, Dublin became thecapital of the Irish Free State, later renamed Ireland.The population of the Greater Dublin Area, as of 2016, was 1,904,806 people.',
-                picture: ["/images/Dublin/dublin-1.jpg", "/images/Dublin/dublin-2.jpg"]
+
+                picture: "/images/Dublin/dublin-1.jpg"
+
               }
 
 
@@ -178,12 +180,14 @@ if (Meteor.isServer) {
                     lat: "47.2172500",
                 },
                 description: 'Nantes is a city in western France, located on the Loire River, 50 km (31 mi) from the Atlantic coast. The city is the sixth largest in France, with almost 300,000 inhabitants within its administrative limits, and an urban area of 600,000 inhabitants. Together with Saint-Nazaire, a seaport located on the Loire estuary, Nantes forms the main metropolis of north-western France.Nantes is the administrative seat of the Loire-Atlantique département and of the Pays de la Loire région, one of the 18 regions of France. Historically and culturally, Nantes belongs to Brittany, a region and former duchy and province. The fact that it is not part of the modern administrative region of Brittany is subject to debate.',
-                picture: ["/images/Nantes/nantes-1.jpg", "/images/Nantes/nantes-2.jpg"]
+
+                picture: "/images/Nantes/nantes-1.jpg"
+
               }
 
-              db.cities.remove({});
-              db.cities.insert(Dublin);
-              db.cities.insert(Nantes);
+              Cities.remove({});
+              Cities.insert(Dublin);
+              Cities.insert(Nantes);
 
         //    ----- CREATING CATEGORIES -----
             var Restaurant = {
@@ -211,19 +215,20 @@ if (Meteor.isServer) {
                 name: 'Grill',
                 }
 
-                db.categories.remove({});
-                db.categories.insert(Restaurant);
-                db.categories.insert(Fastfood);
-                db.categories.insert(Snack);
-                db.categories.insert(Cafeteria);
-                db.categories.insert(Bakery);
-                db.categories.insert(Grill);
+                Categories.remove({});
+                Categories.insert(Restaurant);
+                Categories.insert(Fastfood);
+                Categories.insert(Snack);
+                Categories.insert(Cafeteria);
+                Categories.insert(Bakery);
+                Categories.insert(Grill);
 
       //      ----- CREATING ACTIVITIES -----
             var activity0 = {
                 _id: 'a0',
                 category: 'ca4',
-                name: 'De Grasso',
+                name: 'De Grasso2',
+                city : "c1",
                 price: '23.00',
                 address: 'Main Street, Lens, France',
                 pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
@@ -242,6 +247,7 @@ if (Meteor.isServer) {
                 _id: 'a1',
                 category: 'ca4',
                 name: 'Pizzeria',
+                city : "c0",
                 price: '20.00',
                 address: 'Somewhere, here, France',
                 pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
@@ -261,6 +267,7 @@ if (Meteor.isServer) {
                 category: 'ca4',
                 name: 'Local Bakery',
                 price: '4.00',
+                city : "c1",
                 address: 'Side Street, main road, France',
                 pictures: ["/images/Aix/granet1.jpg", "/images/Aix/granet2.jpg"],
                 rating: '7',
@@ -274,11 +281,11 @@ if (Meteor.isServer) {
                   }],
                 tags: ["bakery", "bread", "cheap"]
                 }
-
-            db.activities.remove({});
-            db.activities.insert(activity0);
-            db.activities.insert(activity1);
-            db.activities.insert(activity2);
+            console.log(activity0);
+            Activities.remove({});
+            Activities.insert(activity0);
+            Activities.insert(activity1);
+            Activities.insert(activity2);
         },
     })
 }

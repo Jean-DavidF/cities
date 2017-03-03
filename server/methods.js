@@ -9,11 +9,12 @@ Meteor.methods({
           }
       });
   },
-  insertActivities:function(category, name, city, price, address, pictures, rating) {
+
+  insertActivities:function(category, name, price, address, pictures, rating, city) {
     Activities.insert({
       "category":category,
       "name":name,
-      "name":city,
+      "city" : city,
       "price":price,
       "address":address,
       "pictures":pictures,
@@ -23,7 +24,6 @@ Meteor.methods({
       console.log(tmp);
     })
   }
-
 });
 
 // Meteor.methods({
