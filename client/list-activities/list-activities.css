@@ -78,4 +78,6 @@
     margin-right: auto;
     max-height: 131px;
     overflow-y: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }

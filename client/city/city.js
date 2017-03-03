@@ -11,7 +11,7 @@ Template.maps.helpers({
       // Map initialization options
       return {
         center: new google.maps.LatLng(this.coordinates['lat'],this.coordinates['long']),
-        zoom: 8,
+        zoom: 12,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,
