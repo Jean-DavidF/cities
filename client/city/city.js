@@ -10,8 +10,8 @@ Template.maps.helpers({
     if (GoogleMaps.loaded()) {
       // Map initialization options
       return {
-        center: new google.maps.LatLng(this.coordinates['long'],this.coordinates['lat']),
-        zoom: 8,
+        center: new google.maps.LatLng(this.coordinates['lat'],this.coordinates['long']),
+        zoom: 12,
         scrollwheel: false,
         navigationControl: false,
         mapTypeControl: false,

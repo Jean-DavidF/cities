@@ -71,3 +71,11 @@ Router.route("/grills/:id", function() {
     else
         this.render("activitiesGrill",{data : listactivities});
 });
+
+Router.route("/activity/:id", function() {
+    var pageactivities = Activities.findOne({_id : this.params.id})
+    if(typeof pageactivities == "undefined")
+        this.render("notFound");
+    else
+        this.render("activitiesPage",{data : pageactivities});
+});

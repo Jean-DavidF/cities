@@ -161,6 +161,10 @@ if (Meteor.isServer) {
             var Dublin = {
                 _id: "c0",
                 name: 'Dublin',
+                coordinates: {
+                    long: "-6.2488900",
+                    lat: "53.3330600",
+                },
                 description: 'Dublin is the capital and largest city of Ireland. Dublin is in the province of Leinster on Ireland seast coast, at the mouth of the River Liffey. The city has an urban area population of 1,345,402 Founded as a Viking settlement, the Kingdom of Dublin became Irelands principal city following the Norman invasion. The city expanded rapidly from the 17th centuryand was briefly the second largest city in the British Empire before the Acts of Union in 1800. Following the partition of Ireland in 1922, Dublin became thecapital of the Irish Free State, later renamed Ireland.The population of the Greater Dublin Area, as of 2016, was 1,904,806 people.',
                 picture: ["/images/Dublin/dublin-1.jpg"]
               }
@@ -169,6 +173,10 @@ if (Meteor.isServer) {
             var Nantes = {
                 _id: "c1",
                 name: 'Nantes',
+                coordinates: {
+                    long: "-1.5533600",
+                    lat: "47.2172500",
+                },
                 description: 'Nantes is a city in western France, located on the Loire River, 50 km (31 mi) from the Atlantic coast. The city is the sixth largest in France, with almost 300,000 inhabitants within its administrative limits, and an urban area of 600,000 inhabitants. Together with Saint-Nazaire, a seaport located on the Loire estuary, Nantes forms the main metropolis of north-western France.Nantes is the administrative seat of the Loire-Atlantique département and of the Pays de la Loire région, one of the 18 regions of France. Historically and culturally, Nantes belongs to Brittany, a region and former duchy and province. The fact that it is not part of the modern administrative region of Brittany is subject to debate.',
                 picture: ["/images/Nantes/nantes-1.jpg"]
               }

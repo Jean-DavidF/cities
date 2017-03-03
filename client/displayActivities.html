@@ -1,6 +1,6 @@
 <template name="displayActivities">
   {{#each a in Activities}}
-              <a href="">
+              <a href="/activity/{{a._id}}">
                   <div class="activity-object">
                        <div class="activity-image" style="background: url('{{picture a}}') no-repeat center; background-size: cover;"></div>
                       <div class="activity-title-description">
