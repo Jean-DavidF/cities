@@ -226,13 +226,13 @@ if (Meteor.isServer) {
       //      ----- CREATING ACTIVITIES -----
             var activity0 = {
                 _id: 'a0',
-                category: 'ca4',
-                name: 'De Grasso2',
+                category: 'ca2',
+                name: 'Le Nid',
                 city : "c1",
-                price: '23.00',
-                address: 'Main Street, Lens, France',
-                pictures: "/images/Aix/granet1.jpg",
-                rating: '9',
+                price: '12',
+                address: 'This high-rise bar with a 360 ° view is decorated with a heron and egg-shell seats',
+                pictures: "/images/Nantes/lenid.jpg",
+                rating: '8.7',
                 comments: [{
                   user: {
                   _id: 'u0',
@@ -241,17 +241,17 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["restaurant", "degrassso", "cheap"]
+                tags: ["leNid", "bar", "snack"]
                 }
             var activity1 = {
                 _id: 'a1',
-                category: 'ca4',
-                name: 'Pizzeria',
-                city : "c0",
-                price: '20.00',
-                address: 'Somewhere, here, France',
-                pictures: "/images/Aix/granet1.jpg",
-                rating: '8',
+                category: 'ca0',
+                name: 'Le Boudoir',
+                city : "c1",
+                price: '30',
+                address: 'This restaurant offers contemporary cuisine in a purple and gold baroque decor for a cozy ambience.',
+                pictures: "/images/Nantes/leboudoir.jpg",
+                rating: '9',
                 comments: [{
                   user: {
                   _id: 'u1',
@@ -260,17 +260,17 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["fastfood", "pizza", "cheap"]
+                tags: ["restaurant"]
                 }
             var activity2 = {
                 _id: 'a2',
-                category: 'ca4',
-                name: 'Local Bakery',
-                price: '4.00',
+                category: 'ca1',
+                name: 'Burger House',
+                price: '12',
                 city : "c1",
-                address: 'Side Street, main road, France',
-                pictures: "/images/Aix/granet1.jpg",
-                rating: '7',
+                address: 'Burgers made with artisan bread and milkshakes in a restaurant with simple furnishings and yellow walls.',
+                pictures: "/images/Nantes/burgerhouse.jpg",
+                rating: '8.8',
                 comments: [{
                   user: {
                   _id: 'u2',
@@ -279,17 +279,17 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["bakery", "bread", "cheap"]
+                tags: ["fastfood", "burger"]
                 }
             var activity3 = {
                 _id: 'a3',
-                category: 'ca2',
-                name: 'Local Bakery',
-                price: '4.00',
+                category: 'ca3',
+                name: 'Flunch',
+                price: '7',
                 city : "c1",
-                address: 'Side Street, main road, France',
-                pictures: "/images/Aix/granet1.jpg",
-                rating: '7',
+                address: 'Self-service cafeteria chain with unlimited vegetable meals and a casual atmosphere.',
+                pictures: "/images/Nantes/flucnh.jpg",
+                rating: '6.8',
                 comments: [{
                   user: {
                   _id: 'u2',
@@ -298,7 +298,45 @@ if (Meteor.isServer) {
                   date: new Date(),
                   comment: "perfect, worth every single cent"
                   }],
-                tags: ["bakery", "bread", "cheap"]
+                tags: ["cafeteria", "familly"]
+                }
+            var activity4 = {
+                _id: 'a4',
+                category: 'ca4',
+                name: 'La Boulangerie Honoré',
+                price: '3',
+                city : "c1",
+                address: 'A bakery is a type of retail bread making and selling. This activity has been the subject of much attention on the part of the governed and rulers because of its importance in food.',
+                pictures: "/images/Nantes/boulangerie.jpg",
+                rating: '9.8',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["bakery", "bread"]
+                }
+            var activity5 = {
+                _id: 'a5',
+                category: 'ca5',
+                name: 'Le Nez Grillé',
+                price: '20',
+                city : "c1",
+                address: 'For lovers of grilled meat. Good welcome, very intimate. Homemade products.',
+                pictures: "/images/Nantes/grill.jpg",
+                rating: '8.4',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["meat", "grill"]
                 }
             console.log(activity0);
             Activities.remove({});
@@ -306,6 +344,8 @@ if (Meteor.isServer) {
             Activities.insert(activity1);
             Activities.insert(activity2);
             Activities.insert(activity3);
+            Activities.insert(activity4);
+            Activities.insert(activity5);
         },
     })
 }
