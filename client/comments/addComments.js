@@ -1,10 +1,10 @@
-Template.addComment.helpers({
+Template.activitiesPage.helpers({
     Activities: function() {
         return Activities.find();
     }
 });
 
-Template.addComment.events({
+Template.activitiesPage.events({
     "click button": function(e) {
       e.preventDefault();
       // var id = Template.currentData()._id;
