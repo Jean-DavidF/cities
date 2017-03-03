@@ -10,9 +10,9 @@ Template.insertActivities.events({
         // var myid = $("#id").val()
         // var category = Categories.findOne({_id: myid});
        Meteor.call("insertActivities",
-            $("#categoryid").val(),
+            Template.currentData().category,
             $("#name").val(),
-            $("#cityid").val(),
+            Template.currentData().city._id,
             $('#price').val(),
             $('#address').val(),
             $('#pictures').val(),

@@ -74,10 +74,17 @@ Router.route("/grills/:id", function() {
 
 
 
-/*Router.route("/activity/:id", function() {
-    var pageactivities = Activities.findOne({_id : this.params.id})
-    if(typeof pageactivities == "undefined")
+Router.route("/activity/:id", function() {
+    var activity = Activities.findOne({_id : this.params.id});
+    var city = Cities.findOne({_id : activity.city});
+    if(typeof activity == "undefined")
         this.render("notFound");
     else
-        this.render("activitiesPage",{data : pageactivities});
-});*/
+        this.render("activitiesPage",{data : {activity : activity, city : city}});
+});
+
+
+
+
+
+
