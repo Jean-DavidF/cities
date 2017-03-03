@@ -1,3 +1,4 @@
+
 // Template.displayComments.helpers({
 //     Activities : function(){
 //         var currentActivity = Activities.find({activity : Template.currentData().activity._id});

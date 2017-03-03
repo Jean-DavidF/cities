@@ -338,6 +338,120 @@ if (Meteor.isServer) {
                   }],
                 tags: ["meat", "grill"]
                 }
+            var activity6 = {
+                _id: 'a6',
+                category: 'ca0',
+                name: 'Dax Restaurant',
+                city : "c0",
+                price: '45',
+                address: 'Welcome to Dax Restaurant, one of the best fine dining restaurants in Dublin city centre offering modern Irish-French cuisine for lunch and dinner Tuesday to Saturday.Our intimate Georgian basement dining room retains many period features. The unique layout with open fire, hard-wood ceilings, fine table linens, modern art, original flag-stone floors and rough rendered walls lends the feel of a wealthy, rustic country manor house in rural France.',
+                pictures: "/images/Dublin/dax.jpg",
+                rating: '9.2',
+                comments: [{
+                  user: {
+                  _id: 'u0',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["restaurant", "dax"]
+                }
+            var activity7 = {
+                _id: 'a7',
+                category: 'ca1',
+                name: 'Supermacs',
+                city : "c0",
+                price: '10',
+                address: 'The first Supermac’s opened its door in 1978 on Main Street, Ballinasloe, Co. Galway. Since that first opening Supermac’s restaurants have become a firm fixture in towns and cities around Ireland. Today Supermac’s is the largest indigenous fast food restaurant group with a policy of continued expansion and growth.The managing director of Supermac’s, Pat McDonagh, identified an opportunity in the locality for a fast food offering while teaching in Kilrickle in Co.Galway. From that first opportunity in Ballinasloe, Supermac’s has grown steadily, bringing its unique brand of wholesomeness and attention to detail to its chain of restaurants across Ireland. The success of the company can be attributed to a number of factors: a unique and innovative menu, a commitment to quality across all aspects of the business and a strong work ethic define Supermac’s as the number one franchise in Ireland',
+                pictures: "/images/Dublin/supermacs.jpg",
+                rating: '7.8',
+                comments: [{
+                  user: {
+                  _id: 'u1',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["spermacs", "fastfood"]
+                }
+            var activity8 = {
+                _id: 'a8',
+                category: 'ca2',
+                name: 'Stript Snacks',
+                price: '8',
+                city : "c0",
+                address: 'Nicest biltong available in the UK or Ireland. Great for a late afternoon snack or a brilliant source of protein after the gym.',
+                pictures: "/images/Dublin/stript.jpg",
+                rating: '8',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["snack", "protein"]
+                }
+            var activity9 = {
+                _id: 'a9',
+                category: 'ca3',
+                name: 'Queen of Tarts',
+                price: '12',
+                city : "c0",
+                address: 'Queen of Tarts opened its doors for the first time in 1998. Sisters Regina and Yvonne Fallon trained as pastry chefs in New York City in the 1990s, returning home to Ireland to establish and run their own café. They knew what they wanted: to create a homely and welcoming space which offered the best breakfasts and weekend brunch in Dublin, the tastiest lunches – and the finest cakes, scones and brownies in the business. Not to mention, of course, the most sublime savoury and sweet tarts too!Queen of Tarts quickly established an iconic reputation – and today, sixteen years on, it’s still flourishing. Everything is baked and prepared fresh on the premises; and Yvonne and Regina still use only the best ingredients – Lavazza coffee beans in their coffee machines, Callebaut fine Belgian chocolate in their chocolate fudge cake and muffins, and of course the freshest Bramley’s Irish apples in their apple crumbles. The home-baked buttermilk brown breads are still moist and flavoursome, the soups are lovingly made daily – and the fabulous cakes and signature tarts still draw customers from far and wide. And now, a perfectly judged wine list is another reason to drop by.',
+                pictures: "/images/Dublin/queen.jpg",
+                rating: '9',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["cafeteria", "familly"]
+                }
+            var activity10 = {
+                _id: 'a10',
+                category: 'ca4',
+                name: 'Thunders Home Bakery',
+                price: '3.5',
+                city : "c0",
+                address: 'From christening cakes to birthday cakes and wedding cakes to novelty cakes, we can make whatever you want. Our cakes are made from fresh cream and butter cream and can be bought straight from our shops or ordered online with next day delivery.From our first shop in Drumcondra 1969, we now have seven around Dublin and two cafes, with more on the way. Yet we haven’t forgotten our origins and what makes us special. We are a traditional home bakery that makes fresh bread, cakes and confectionery.',
+                pictures: "/images/Dublin/bakery.jpg",
+                rating: '9',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["bakery", "bread"]
+                }
+            var activity11 = {
+                _id: 'a11',
+                category: 'ca5',
+                name: 'Whitefriar Grill',
+                price: '35',
+                city : "c0",
+                address: 'Whitefriar Grill’s Sunday Night Ribs ‘N’ Rump is nirvana for meat lovers everywhere! Stock up on the protein for the week ahead with a 14oz char-grilled rump steak, sticky BBQ baby back ribs, bacon ribs, honey glazed lamb ribs all served on a WFG chopping board, add to this two sides from (tobacco onions, greens, fries, balsamic onion & mushrooms) and you have a meat feast! All for 40 euros for two!',
+                pictures: "/images/Dublin/grill.jpg",
+                rating: '8.4',
+                comments: [{
+                  user: {
+                  _id: 'u2',
+                  email: 'myemail@hello.com'
+                  },
+                  date: new Date(),
+                  comment: "perfect, worth every single cent"
+                  }],
+                tags: ["meat", "grill"]
+                }
             console.log(activity0);
             Activities.remove({});
             Activities.insert(activity0);
@@ -346,6 +460,12 @@ if (Meteor.isServer) {
             Activities.insert(activity3);
             Activities.insert(activity4);
             Activities.insert(activity5);
+            Activities.insert(activity6);
+            Activities.insert(activity7);
+            Activities.insert(activity8);
+            Activities.insert(activity9);
+            Activities.insert(activity10);
+            Activities.insert(activity11);
         },
     })
 }
