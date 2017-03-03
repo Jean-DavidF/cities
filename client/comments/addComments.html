@@ -1,9 +1,10 @@
 <template name="addComment">
     <div class="addcomment-content">
         <h1 class="addcomment-bigtitle">Add a comment on this section</h1>
-
-        <input type="text" placeholder="Add a subject..." /><br />
-        <textarea type="text" placeholder="Write you're comment here..."></textarea><br />
+<input type="hidden" id="f1" value="{{Template.currentData()._id}}">
+<input type="hidden" id="f2" value="{{Meteor.user()._id}}">
+<input type="hidden" id="f3" value="{{Meteor.user().email[0].address}}">
+        <textarea id="addcomment" type="text" placeholder="Write you're comment here..."></textarea><br />
         <button type="submit">Add a comment !</button>
     </div>
 </template>

@@ -26,12 +26,21 @@ Meteor.methods({
   }
 });
 
-// Meteor.methods({
-//   insertActivity:function(activity) {
-//     return Activities.insert(activity);
-//   },
-//   updateCity:function(idCity, idActivity) {
-//     var activity=Activities //find the id _id:idActivity
-//   },
-//   Cities.update({_id:idCity}, {$push:{activities:activity}})
-// })
+
+Meteor.methods({
+  updateActivities:function(activityid, userid, email, comment) {
+Activities.update({
+  _id : activityid},{$push :{
+      comments : {
+        user : {
+          _id : userid,
+          email : email
+        },
+          date : new Date(),
+          comment : comment
+        }
+      }
+      }
+);
+}
+});
